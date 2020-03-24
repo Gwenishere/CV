@@ -1,0 +1,33 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+aside{
+    background-color: #0294A5;
+    flex: 2;
+    position: relative;
+    padding: 15px;
+    }
+
+    aside p{
+        text-align: justify;
+    }
+    aside h3{
+        background-color: #03353E;
+        color:whitesmoke;
+        font-family:'Open Sans', sans-serif;
+        text-align: center;
+    }
+
+
+    section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article
+{
+    margin-left: 20px;
+    flex: 3;
+}
