@@ -1,121 +1,136 @@
-body{
-    font-family:'Open Sans', sans-serif;
-    margin:0;
-    padding: 0;
-    display: flex; /*changé*/
+/*body*/
+body {
+  display: flex;
+  flex-direction: row; /*les éléments sont alignés horizontalement*/
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-
-/*Aside */
-aside{
-background-color: #00BCD4;
-flex: 1.2;
-position: relative; /*garde ou pas?*/
-}
-
-aside h3{
-    background-color: #006064;
-    color:whitesmoke;
-    font-family:'Open Sans', sans-serif;
-    text-align: center;    
-}
-
-aside p{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.asideapropos{
-    text-align: justify;
-    padding-bottom: 50px;
-    
-}
-
-img {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid 2px #0097A7;
+/*balises communes*/
+a {
+  color: black;
+  text-decoration: none;
+  }
+  a:hover {
+  color: #80DEEA;
   }
 
-a{
-color: black;
-text-decoration: none;
+/*Aside --partie sur le côté*/
+aside {
+  width: 30%;
+  background-color: #00BCD4;
+  display: flex;
+  flex-direction: column;/*Les lignes de texte sont empilées */
+  padding-bottom: 20px;
 }
-a:hover{
-    color: #80DEEA;
+.photo {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-aside i{
-   align-content: space-around;
-   margin-right: 5px;
+aside img {
+  border-radius: 50%; /*forme ronde, sinon enlever pour photo carrée*/
+  height: 200px;
+  width: 200px;
+  border: solid 2px #0097A7;
 }
-.asideicone{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
-    padding-top: 20px;
+aside h3 { /*au cas où utilisation du h3 dans section, je laisse la notion aside*/
+  background-color: #006064;
+  color: whitesmoke;
+  text-align: center;
+  padding: 5px;
+}
+.rubrique1 p {
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.rubrique2 {
+  margin-top: auto;
+}
+.asideicone {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 5px;
+}
+.asideicone i {
+  text-align: center;
+}
+.circle-icon {
+  border: 3px black solid;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/*Section --partie principale divisée en articles et avec un header*/
+section {
+  display: flex;
+  flex-direction: column;/*même logique que pour aside*/
+  width: 65%;
+  margin:  0 50px;
+  height: auto;
+}
+header {
+ margin-bottom: 50px;
+}
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+header h2 {
+  font-size: 2em;
+}
+section h1 {
+  margin-left: 0px;
+}
+section h1 i {
+  margin-right: 25px;
+}
+article {
+  width: 100%;
+  padding-top: 30px;
+  border-top: 2px #00BCD4 solid;
+}
+.conteneur {
+  display: flex;
+  line-height: 1.3em;
+  padding-top: 25px;
+}
+.item1 {
+  width: 25%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.item1 .fas {
+  margin: 5px 10px 0 0;
+  width: 10%;
+  height: 100%;
+}
+.item1 p {
+  margin: 0;
+}
+.item2 {
+  padding-left: 50px;
+  width: 70%;
+  margin-top: 0px;
+}
+li {
+  list-style: none;
+}
+.item2 h4 {
+  margin: 0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  margin: 0px 50px 0px 30px;
+  display: flex;
+  justify-content: center;
 }
 
 
-h1 strong{
-    color: #00BCD4;
-    font-weight: bold;
-}
-h1{
-    font-size: xx-large;
-}
-h2{
-    position: relative;
-    line-height: 1em;
-}
-h2:before {
-    position: absolute;
-    left: 0;
-    top: 1.2em;
-    height: 0;
-    width: 65px;
-    content: '';
-    border-top: 2px solid #00BCD4;
-  }
 
-/*Section changé->display flex supprimé*/
-section{
-  flex: 3;
-}
-
-header{
-    padding-left: 100px;
-}
-
-/*Article*/
-article
-{
-    padding-left: 100px;
-    padding-right: 50px;
-}
-
-  article h3{
-      padding-bottom:5px;
-      border-bottom:2px solid #00BCD4 ;
-  }
-ul{
-    list-style: none;
-
-}
-.conteneur{
-display: flex;
-
-}
-.item1{
-    flex:0.3;
-}
-.item2{
-    flex: 1;
-}
-
-.conteneur2{
-    display: flex;
-
-}
 
