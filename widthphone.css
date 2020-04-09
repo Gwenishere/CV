@@ -1,1 +1,80 @@
+   /*mobile sous 768px*/
+ @media screen and (max-width: 768px) {
+  body { 
+  flex-direction: column;
+  width: auto;
+  margin: auto;
+}
 
+aside {
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  margin: auto;
+  justify-content: center;
+}
+.photo {
+  width: 100%;
+  margin: auto;
+}
+.rubrique1 {
+  width: 100%;
+  height: auto;
+}
+
+.rubrique1 p {
+  text-align: justify;
+  padding: 0;
+}
+.rubrique2 {
+  width: 100%;
+}
+.asideicone {
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+section {
+  width: auto;
+  margin: 10px;
+}
+article {
+  width: 100%;
+  margin: auto;
+}
+.conteneur {
+  display: flex;
+  justify-content: flex-start;
+}
+.item1 {
+  width: 10%
+}
+.item1 i {
+  display: none;
+}
+.item2 {
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  text-align: justify;
+}
+.contact {
+      width: 40%;
+      text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+  }
