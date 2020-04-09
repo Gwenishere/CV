@@ -1,1 +1,47 @@
+  /*tablettes de taille 1013 à 768 px  */
+@media screen and (max-width: 1024px) {
 
+body {
+   flex-direction: column;/*si aside apres section>colum-reverse, sinon column*/
+   width: auto;
+   margin: auto;
+}
+
+ aside {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+.photo {
+   width: 100%;
+}
+.rubrique1,.rubrique2 {
+   width: 30%;
+   margin-top: 20px;
+}
+.rubrique1 p {
+   text-align: justify;
+   padding: 0;
+}
+.asideicone {
+  flex-direction: column;
+  text-align: center;
+  margin: 0 33.3%;
+  justify-content: space-between;
+  display: flex;
+}
+.asideicone i {
+  text-align: center;
+  border: 3px black solid;
+  border-radius: 50%;
+  margin: 5px;
+  
+}
+ section {
+   width: auto;
+   margin: 10px;
+}
+
+}
