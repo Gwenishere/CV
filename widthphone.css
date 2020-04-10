@@ -49,11 +49,10 @@ article {
   justify-content: flex-start;
 }
 .item1 {
-  width: 10%
+  display:flex;
+  flex-direction: row;
 }
-.item1 i {
-  display: none;
-}
+
 .item2 {
   margin: auto;
 }

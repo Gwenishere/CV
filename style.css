@@ -51,17 +51,17 @@ aside h3 { /*au cas où utilisation du h3 dans section, je laisse la notion asid
 .asideicone {
   display: flex;
   justify-content: space-around;
-  padding: 0px 5px;
+  padding: 0px 5px; 
 }
 .asideicone i {
   text-align: center;
-}
-.circle-icon {
   border: 3px black solid;
   border-radius: 50%;
-  padding: 15px;
+  padding: 10px;
 }
-
+.fa-36x {
+  font-size: 36px;
+}
 /*Section --partie principale divisée en articles et avec un header*/
 section {
   display: flex;
@@ -77,8 +77,25 @@ header h1 {
   font-size: 3em;
   margin-bottom: 10px;
 }
+header h1 span {
+  color: #00BCD4;
+}
 header h2 {
   font-size: 2em;
+}
+header h2 span {
+  border-bottom: 2px #00BCD4 solid;
+}
+.fa-graduation-cap {
+  color: #00BCD4;
+  font-size: 24px;
+}
+.fa-briefcase {
+  color: #00BCD4;
+}
+.fa-user-check {
+  color: #00BCD4;
+  font-size: 24px;
 }
 section h1 {
   margin-left: 0px;
@@ -100,16 +117,20 @@ article {
   width: 25%;
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row;
+}
+.x-small {
+  font-size: x-small;
 }
 .item1 .fas {
   margin: 5px 10px 0 0;
   width: 10%;
   height: 100%;
+  color:#00BCD4;
 }
 .item1 p {
   margin: 0;
 }
+
 .item2 {
   padding-left: 50px;
   width: 70%;
